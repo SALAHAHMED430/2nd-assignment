@@ -1,0 +1,357 @@
+/* -------------------
+     font : work sans link 
+--------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+
+/* -------------------
+    common css & utilities 
+----------------------*/
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
+}
+
+.container{
+    width: 1440px;  
+}
+main{
+
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.btn-primary{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600px;
+    width:180px;
+    height: 64px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #FF900E;
+}
+.primary-text{
+    font-size: 64px;
+    font-weight: 700;
+}
+.secondary-text{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.tertiary-text{
+    color: #FF900E;
+    
+}
+
+/* -------------------
+    main css start from here 
+--------------------------*/
+/* --------------------
+    navigation bar start
+----------------------*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF900E1A;
+
+}
+.nav-container{
+    /* width: 1440px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 0px;
+}
+.logo-title h2{
+    font-size: 45px;
+    font-weight: 700px;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-bar ul a{
+    text-decoration: none;
+    margin-left:60px;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+/* --------------------
+    navigation bar end
+----------------------*/
+
+/* ------------------
+    banner section
+-------------------- */
+.banner-section{
+    background-color: #FF900E1A;
+    padding:0px 240px 45px;
+}
+.banner-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.banner-title{
+    color: #131313;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.banner-description{
+    color: #727272;
+}
+.banner-btn{
+    margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+/* ----------------
+    banner end 
+----------------- */
+
+/*-----------------------
+    quick-features start 
+ ---------------------- */
+ .quick-features-container{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    margin-top: 74px;
+    margin-bottom: 130px;
+ }
+.quick-features-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:24px;
+}
+
+.quick-features-text{
+    margin-left: 73px;
+}
+
+.quick-features-title{
+    color:#727272;
+    font-size: 45px;
+}
+.quick-features-description{
+    color: #727272;
+}
+/* -------------------
+quick feature list end
+----------------------- */
+
+/*------------------
+ feature list start 
+ ------------------- */
+
+.features-list-container{
+    display: flex;
+    justify-content: space-between;
+}
+.features-list-title{
+
+    border-left:5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+.features-list-description{
+    color: #727272;
+    margin-bottom: 60px;
+    line-height: 26px;
+}
+.features-text{
+    margin:33px;
+}
+
+.feature-title{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom:0px;
+
+}
+.feature-description{
+    color: #727272;
+    margin-bottom: 80px;
+    line-height: 23px;
+}
+.btn-experience{
+    font-size: 25px;
+    width:342px;
+    height:200px;
+    border: 0px;
+    border-radius: 5px;
+    /* position: absolute;
+    top: 2805px;
+    left:820px; */
+}
+.btn-experience-big-text{
+    font-size: 65px;
+    font-weight: 700;
+}
+/* --------------------------
+    features list end 
+---------------------------- */
+
+/* ---------------------------
+    facts start 
+-----------------------------*/
+
+
+
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:125px;
+    margin: 50px;
+}
+.facts-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 30px;
+
+}
+.facts-title p{
+    line-height: 26px;
+    margin-bottom: 100px;
+    margin-top: 24px;
+}
+.fact-container{
+    transition: transform .5s;
+}
+.fact{
+    width:240px;
+    height: 240px;
+    /* padding: 45px 35px 60px; */
+    border:1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.fact img{
+    width:46px;
+    height:46px;
+}
+.fact h2{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 10px 0px;
+}
+.fact p{
+    width: 180px;
+    height: 20px;
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 10px;
+}
+.fact-container:hover{
+    /* position: relative;
+    top: 15px;
+    left: 15px; */
+    transform: rotate(5deg) translate( 15px, 8px );
+    
+}
+
+/* ---------------------------
+        facts end  
+-----------------------------*/
+
+/* ---------------------------
+       sponsors start 
+-----------------------------*/
+.sponsors-text h2,.sponsors-text p{
+    text-align: center;
+}
+.sponsors-text h2{
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-top: 130px;
+    margin-bottom: 24px;
+}
+.sponsors-text p{
+    margin-bottom: 50px;
+    color: #727272;
+}
+.sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap:155px;
+
+}
+.sponsors-images img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin-bottom: 130px;
+}
+
+/* ---------------------------
+       sponsors end 
+-----------------------------*/
+
+/* ---------------------------
+       footer start 
+-----------------------------*/
+.footer{
+
+    margin-bottom: 216px;
+    display: flex;
+    justify-content:center ;
+
+}
+.footer-container{
+        background-color: #FFF4E7;
+            height: 100px;
+            width: 1440px;
+}
+.footer-container h2{
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+
+}
+.footer-title{
+    margin: 40px 0px;
+}
+
+
+
+/* ---------------------------
+       footer end 
+-----------------------------*/
+
+
+
+ 
